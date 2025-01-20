@@ -1,0 +1,27 @@
+21:53:54:831  INFO 4892 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.25 on MECHREV16PRO with PID 4892 (D:\BaiduNetdiskDownload\0、2024最新SpringCloud微服务开发与实战\SpringCloud微服务—资料\day02-Docker\资料\hmall\trade-service\target\classes started by hllqkb in D:\BaiduNetdiskDownload\0、2024最新SpringCloud微服务开发与实战\SpringCloud微服务—资料\day02-Docker\资料\hmall)
+21:53:54:833 DEBUG 4892 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+21:53:54:833  INFO 4892 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
+21:53:55:561  INFO 4892 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79a1974f-e20f-3aec-bbc6-2591c9c95e72
+21:53:55:787  INFO 4892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+21:53:55:794  INFO 4892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+21:53:55:795  INFO 4892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+21:53:55:887  INFO 4892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+21:53:55:887  INFO 4892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1029 ms
+21:53:55:995  INFO 4892 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+21:53:57:335  INFO 4892 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+21:53:57:575  INFO 4892 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+21:53:58:162  INFO 4892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+21:53:58:660  INFO 4892 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+21:53:58:662  INFO 4892 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+21:53:58:675  INFO 4892 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+21:53:58:730  INFO 4892 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 4.82 seconds (JVM running for 5.652)
+21:54:02:207  INFO 4892 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:54:02:208  INFO 4892 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+21:54:02:209  INFO 4892 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+21:54:35:502  INFO 4892 --- [http-nio-8085-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+21:54:35:666  INFO 4892 --- [http-nio-8085-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+21:54:35:670 DEBUG 4892 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+21:54:35:683 DEBUG 4892 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1654779387523936258(Long)
+21:54:35:698 DEBUG 4892 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+21:56:41:528  INFO 4892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+21:56:41:539  INFO 4892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
