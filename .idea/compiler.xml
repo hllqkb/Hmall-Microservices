@@ -6,24 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="item-service" />
         <module name="cart-service" />
-        <module name="hm-service" />
+        <module name="pay-service" />
+        <module name="hm-gateway" />
+        <module name="trade-service" />
         <module name="hm-common" />
+        <module name="item-service" />
+        <module name="user-service" />
+        <module name="hm-service" />
         <module name="hm-api" />
-      </profile>
-      <profile name="Annotation profile for hmall" enabled="true">
-        <sourceOutputDir name="../user-service/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../user-service/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="user-service (1)" />
-        <module name="user-service (2)" />
-      </profile>
-      <profile name="Annotation profile for user-service (3)" enabled="true">
-        <sourceOutputDir name="../trade-service/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../trade-service/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="user-service (3)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,9 +22,9 @@
       <module name="cart-service (2)" target="11" />
       <module name="hm-service (1)" target="11" />
       <module name="hm-service (2)" target="11" />
-      <module name="pay-service" target="11" />
-      <module name="trade-service" target="11" />
-      <module name="user-service" target="11" />
+      <module name="user-service (1)" target="11" />
+      <module name="user-service (2)" target="11" />
+      <module name="user-service (3)" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -43,6 +34,7 @@
       <module name="cart-service (2)" options="-parameters" />
       <module name="hm-api" options="-parameters" />
       <module name="hm-common" options="-parameters" />
+      <module name="hm-gateway" options="-parameters" />
       <module name="hm-service" options="-parameters" />
       <module name="hm-service (1)" options="-parameters" />
       <module name="hm-service (2)" options="-parameters" />
